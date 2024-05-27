@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+	<title>form</title>
+</head>
+<body>
+	<div class="container vh-100">
+		<div class="row mt-3">
+			<div class="col" dir="rtl">
+				<h1 id="fName" class="" style="font-family: arial">שלום {{firstName}}</h1>
+			</div>
+		</div>
+		<div class="row h-75 align-items-center">
+			<div class="col">
+				<form action="/sending" method="POST">
+					<input type="text" name="fName" value="{{firstName}}" class="d-none">
+					<div class="container" id="formDiv">
+						<!--First Card-->
+						<div class="row mb-3">
+							<div class="col">
+								<section id="firstWeekSection" >
+									<div class="card" id="firstCard" data-bs-toggle="collapse" data-bs-target="#firstWeek" aria-expanded="true" aria-controls="firstWeek" style="height: 5rem;">
+										<div class="card-body">
+											<div class="container" dir="rtl">
+												<div class="row">
+													<div class="col">
+														סופש ראשון
+													</div>
+													<div class="col" dir="ltr">
+														30-1
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div id="firstWeek" class="accordion-collapse collapse" data-bs-parent="#formDiv">
+								      <div class="accordion-body">
+								        <div class="card border-0" dir="rtl">
+								        	<div class="card-body">
+								        		<div class="container">
+								        			<div class="row">
+								        				<div class="col">
+								        					<input type="radio" class="btn-check" value="1" name="options-base-1" id="first1" autocomplete="off">
+															<label class="btn btn-outline-success" for="first1">יכול</label>
+								        				</div>
+								        				<div class="col">
+								        					<input type="radio" name="options-base-1" value="2" class="btn-check" id="first2">
+								        					<label class="btn btn-outline-warning" for="first2">פחות</label>
+
+								        				</div>
+								        				<div class="col">
+								        					<input type="radio" name="options-base-1" value="0" class="btn-check" id="first3">
+								        					<label class="btn btn-outline-danger" for="first3">חוסם</label>
+								        				</div>
+								        				
+								        			</div>
+								        		</div>
+								        	</div>
+								        </div>
+								      </div>
+								    </div>
+								</section>
+							</div>
+						</div>
+						<!--Second Card-->
+						<div class="row  mb-3">
+							<div class="col">
+								<section id="secondWeekSection">
+									<div class="card" id="secondCard" data-bs-toggle="collapse" data-bs-target="#secondWeek" aria-expanded="true" aria-controls="secondWeek" style="height: 5rem;">
+										<div class="card-body">
+											<div class="container" dir="rtl">
+												<div class="row">
+													<div class="col">
+														סופש שני
+													</div>
+													<div class="col" dir="ltr">
+														6-8	
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div id="secondWeek" class="accordion-collapse collapse" data-bs-parent="#formDiv">
+								      <div class="accordion-body">
+								        <div class="card border-0" dir="rtl">
+								        	<div class="card-body">
+								        		<div class="container">
+								        			<div class="row">
+								        				<div class="col">
+								        					<input type="radio" class="btn-check" name="options-base-2" value="1" id="second1" autocomplete="off">
+															<label class="btn btn-outline-success" for="second1">יכול</label>
+								        				</div>
+								        				<div class="col">
+								        					<input type="radio" name="options-base-2" value="2" class="btn-check" id="second2">
+								        					<label class="btn btn-outline-warning" for="second2">פחות</label>
+
+								        				</div>
+								        				<div class="col">
+								        					<input type="radio" name="options-base-2" value="0" class="btn-check" id="second3">
+								        					<label class="btn btn-outline-danger" for="second3">חוסם</label>
+								        				</div>
+								        				
+								        			</div>
+								        		</div>
+								        	</div>
+								        </div>
+								      </div>
+								    </div>
+								</section>
+							</div>
+						</div>
+						<!--Third Card-->
+						<div class="row mb-3">
+							<div class="col">
+								<section id="thirdWeekSection">
+									<div class="card" id="thirdCard" data-bs-toggle="collapse" data-bs-target="#thirdWeek" aria-expanded="true" aria-controls="thirdWeek"style="height: 5rem;">
+										<div class="card-body">
+											<div class="container" dir="rtl">
+												<div class="row">
+													<div class="col">
+														סופש שלישי
+													</div>
+													<div class="col" dir="ltr">
+														13-15	
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div id="thirdWeek" class="accordion-collapse collapse" data-bs-parent="#formDiv">
+								      <div class="accordion-body">
+								        <div class="card border-0" dir="rtl">
+								        	<div class="card-body">
+								        		<div class="container">
+								        			<div class="row">
+								        				<div class="col">
+								        					<input type="radio" class="btn-check" name="options-base-3" value="1" id="third1" autocomplete="off">
+															<label class="btn btn-outline-success" for="third1">יכול</label>
+								        				</div>
+								        				<div class="col">
+								        					<input type="radio" name="options-base-3" value="2" class="btn-check" id="third2">
+								        					<label class="btn btn-outline-warning" for="third2">פחות</label>
+
+								        				</div>
+								        				<div class="col">
+								        					<input type="radio" name="options-base-3" value="0" class="btn-check" id="third3">
+								        					<label class="btn btn-outline-danger" for="third3">חוסם</label>
+								        				</div>
+								        				
+								        			</div>
+								        		</div>
+								        	</div>
+								        </div>
+								      </div>
+								    </div>
+								</section>
+							</div>
+						</div>
+						<!--Forth Card-->
+						<div class="row mb-3">
+							<div class="col">
+								<section>
+									<div class="card" id="forthCard" data-bs-toggle="collapse" data-bs-target="#forthWeek" aria-expanded="true" aria-controls="forthWeek" style="height: 5rem;">
+										<div class="card-body">
+											<div class="container" dir="rtl">
+												<div class="row">
+													<div class="col">
+														סופש רביעי
+													</div>
+													<div class="col" dir="ltr">
+														20-22
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div id="forthWeek" class="accordion-collapse collapse" data-bs-parent="#formDiv">
+								      <div class="accordion-body">
+								        <div class="card border-0" dir="rtl">
+								        	<div class="card-body">
+								        		<div class="container">
+								        			<div class="row">
+								        				<div class="col">
+								        					<input type="radio" class="btn-check" name="options-base-4" value="1" id="forth1" autocomplete="off">
+															<label class="btn btn-outline-success" for="forth1">יכול</label>
+								        				</div>
+								        				<div class="col">
+								        					<input type="radio" name="options-base-4" value="2" class="btn-check" id="forth2">
+								        					<label class="btn btn-outline-warning" for="forth2">פחות</label>
+
+								        				</div>
+								        				<div class="col">
+								        					<input type="radio" name="options-base-4" value="0" class="btn-check" id="forth3">
+								        					<label class="btn btn-outline-danger" for="forth3">חוסם</label>
+								        				</div>
+								        				
+								        			</div>
+								        		</div>
+								        	</div>
+								        </div>
+								      </div>
+								    </div>
+								</section>
+							</div>
+						</div>
+						<div>
+							<button type="submit" class="btn btn-outline-success">שלח</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="row">
+			
+		</div>
+	</div>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="static/js/script.js"></script>
+</body>
+</html>
